@@ -1,7 +1,7 @@
 package org.dullnull.service;
 
 import org.dullnull.dao.UserDao;
-import org.dullnull.domain.User;
+import org.dullnull.domain.UserDO;
 
 /**
  * @author iisheng
@@ -9,7 +9,7 @@ import org.dullnull.domain.User;
  */
 public class UserService {
 
-    public User getById(String id) {
+    public UserDO getById(String id) {
         return new UserDao().getById(id);
     }
 }

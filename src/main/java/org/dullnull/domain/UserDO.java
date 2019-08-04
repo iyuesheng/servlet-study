@@ -11,8 +11,7 @@ import lombok.ToString;
 @Data
 @Builder
 @ToString
-public class User {
+public class UserDO {
     private String id;
     private String name;
-    private String mobile;
 }

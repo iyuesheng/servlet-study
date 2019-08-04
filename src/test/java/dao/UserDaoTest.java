@@ -1,12 +1,12 @@
 package dao;
 
 import org.dullnull.dao.UserDao;
-import org.dullnull.domain.User;
+import org.dullnull.domain.UserDO;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * @author iSheng
+ * @author iisheng
  * @date 2018/03/21 12:43:28
  */
 public class UserDaoTest {
@@ -15,9 +15,9 @@ public class UserDaoTest {
 
     @Test
     public void getByIdTest() {
-        String id = "isheng.me";
-        User user = userDao.getById(id);
-        Assert.assertNotNull(user);
-        System.out.println(user);
+        String id = "1";
+        UserDO userDO = userDao.getById(id);
+        Assert.assertNotNull(userDO);
+        System.out.println(userDO);
     }
 }

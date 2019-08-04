@@ -1,7 +1,7 @@
 package org.dullnull.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.dullnull.domain.User;
+import org.dullnull.domain.UserDO;
 import org.dullnull.service.UserService;
 
 import javax.servlet.ServletException;
@@ -39,11 +39,11 @@ public class HelloController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("===== doGet =====");
         req.getParameterMap();
-        req.setAttribute("param","iSheng");
+        req.setAttribute("param", "iisheng");
         resp.setContentType("text/json; charset=utf-8");
-        String id = "isheng.me";
-        User user = new UserService().getById(id);
-        String result = new ObjectMapper().writeValueAsString(user);
+        String id = "1";
+        UserDO userDO = new UserService().getById(id);
+        String result = new ObjectMapper().writeValueAsString(userDO);
         System.out.println(result);
         PrintWriter printWriter = resp.getWriter();
         printWriter.print(result);

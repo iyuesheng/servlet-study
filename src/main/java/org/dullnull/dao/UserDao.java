@@ -1,6 +1,6 @@
 package org.dullnull.dao;
 
-import org.dullnull.domain.User;
+import org.dullnull.domain.UserDO;
 import org.dullnull.utils.DatabaseConnection;
 
 import java.sql.ResultSet;
@@ -12,20 +12,19 @@ import java.sql.SQLException;
  */
 public class UserDao {
 
-    public User getById(String id) {
-        String sql = "SELECT * FROM user WHERE id = ? ";
+    public UserDO getById(String id) {
+        String sql = "SELECT * FROM t_user WHERE id = ? ";
         Object[] params = new Object[]{
                 id
         };
         try {
             ResultSet resultSet = DatabaseConnection.resultSet(sql, params);
             resultSet.next();
-            User user = User.builder()
+            UserDO userDO = UserDO.builder()
                     .id(resultSet.getString("id"))
-                    .mobile(resultSet.getString("mobile"))
                     .name(resultSet.getString("name"))
                     .build();
-            return user;
+            return userDO;
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
