@@ -1,6 +1,6 @@
-package org.dullnull.utils;
+package cn.iisheng.utils;
 
-import org.dullnull.config.DatabaseConfig;
+import cn.iisheng.config.DatabaseConfig;
 
 import java.sql.*;
 

@@ -1,4 +1,4 @@
-package org.dullnull.config;
+package cn.iisheng.config;
 
 /**
  * @author iisheng

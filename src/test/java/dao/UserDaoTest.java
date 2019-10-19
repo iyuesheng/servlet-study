@@ -1,7 +1,7 @@
 package dao;
 
-import org.dullnull.dao.UserDao;
-import org.dullnull.domain.UserDO;
+import cn.iisheng.dao.UserDao;
+import cn.iisheng.domain.UserDO;
 import org.junit.Assert;
 import org.junit.Test;
 

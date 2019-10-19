@@ -1,4 +1,4 @@
-package org.dullnull.domain;
+package cn.iisheng.domain;
 
 import lombok.Builder;
 import lombok.Data;

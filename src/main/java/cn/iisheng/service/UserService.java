@@ -1,7 +1,7 @@
-package org.dullnull.service;
+package cn.iisheng.service;
 
-import org.dullnull.dao.UserDao;
-import org.dullnull.domain.UserDO;
+import cn.iisheng.dao.UserDao;
+import cn.iisheng.domain.UserDO;
 
 /**
  * @author iisheng

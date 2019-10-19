@@ -1,7 +1,7 @@
-package org.dullnull.dao;
+package cn.iisheng.dao;
 
-import org.dullnull.domain.UserDO;
-import org.dullnull.utils.DatabaseConnection;
+import cn.iisheng.domain.UserDO;
+import cn.iisheng.utils.DatabaseConnection;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
